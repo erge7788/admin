@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>诚信赢天下的博客登录</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .testCode{
+            width:120px;
+            position: relative;
+        }
+        .code{
+            position:absolute;
+            right:-120px;
+            top:6px;
+            height:40px;
+            width:100px;
+            line-height:40px;
+            border:1px solid rgba(255,255,255,.2);
+            border-radius:2px;
+            font-size:20px;
+            color:#fff;
+            letter-spacing:2px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form class="form">
+            <div class="form__cover"></div>
+            <div class="form__loader">
+                <div class="spinner active">
+                    <svg class="spinner__circular" viewBox="25 25 50 50">
+                        <circle class="spinner__path" cx="50" cy="50" r="20" fill="none" stroke-width="4"
+                            stroke-miterlimit="10">
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="form__content">
+                <h1>欢迎回家</h1>
+                <div class="styled-input">
+                    <input type="text" class="styled-input__input" name="nickname">
+                    <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">Username</span>
+                    </div>
+                    <div class="styled-input__circle"></div>
+                </div>``
+                <div class="styled-input">
+                    <input type="password" class="styled-input__input">
+                    <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">Password</span>
+                    </div>
+                    <div class="styled-input__circle"></div>
+                </div>
+                <div class="styled-input testCode">
+                    <input type="text" class="styled-input__input">
+                    <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">验证码</span>
+                    </div>
+                    <div class="styled-input__circle"></div>
+                    <span class="code">1aR6</span>
+                </div>
+                <button type="button" class="styled-button">
+                    <span class="styled-button__real-text-holder"> 
+                        <span class="styled-button__real-text">开门</span>
+                        <span class="styled-button__moving-block face"> 
+                            <span class="styled-button__text-holder"> 
+                                <span class="styled-button__text">开门</span> 
+                            </span>
+                        </span>
+                        <span class="styled-button__moving-block back"> 
+                            <span class="styled-button__text-holder">
+                                <span class="styled-button__text">开门</span> 
+                            </span>
+                        </span>
+                    </span> 
+                </button>
+            </div>
+        </form>
+    </main>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
